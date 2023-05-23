@@ -57,4 +57,4 @@ $frontendurl = "frontend/layout/".DIRECTORY_SEPARATOR;
 $portal_partials = $docroot.DIRECTORY_SEPARATOR.'portal'.DIRECTORY_SEPARATOR.'partials'.DIRECTORY_SEPARATOR;
 $webportal = "http://pondit.test".DIRECTORY_SEPARATOR;
 
-$datasource_driver = "JSON"; // "Database, XML(optional), COOKIE/Session (learning only)
+// $datasource_driver = "JSON"; // "Database, XML(optional), COOKIE/Session (learning only)
