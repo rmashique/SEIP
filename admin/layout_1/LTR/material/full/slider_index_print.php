@@ -1,4 +1,4 @@
-<!-- <?php include_once($_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.'config.php') ?>
+<?php include_once($_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.'config.php') ?>
 <?php
 
     $dataSlides = file_get_contents($datasource.DIRECTORY_SEPARATOR.'slideritems.json');
@@ -57,4 +57,4 @@
 						</table>
 </body>
 </html>
- -->
+

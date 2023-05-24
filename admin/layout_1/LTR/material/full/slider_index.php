@@ -110,28 +110,28 @@
      ?> 
 
 
-		<tr>
-			<td title="<?=$slide->uuid?>"><?=++$key?></td>
-			<td><?=$slide->title?></td>
-			<!-- <td><img src="<?=$slide->src?>" style="width:100px;height:100px"></td> -->
-			<td><img src="<?=$slide->src?>" style="width:100px;height:100px"></td>
-			<td><?=$slide->alt?></td>
-			<td><?=$slide->caption?></td>
-			<td> 
-			<!-- <a href="slider_show.php?slideIndex=<?=$key-1?>">Show</a>   -->
-			<a href="slider_show.php?id=<?=$slide->id?>">Show</a>  
+								<tr>
+									<td title="<?=$slide->uuid?>"><?=++$key?></td>
+									<td><?=$slide->title?></td>
+									<!-- <td><img src="<?=$slide->src?>" style="width:100px;height:100px"></td> -->
+									<td><img src="<?=$webportal."uploads/".$slide->src?>" style="width:100px;height:100px"></td>
+									<td><?=$slide->alt?></td>
+									<td><?=$slide->caption?></td>
+									<td> 
+									<!-- <a href="slider_show.php?slideIndex=<?=$key-1?>">Show</a>   -->
+									<a href="slider_show.php?id=<?=$slide->id?>">Show</a>  
 
-			| <a href="slider_edit.php?id=<?=$slide->id?>">Edit</a> 
-			
-			| 
-			<form action="slider_delete.php" method="post">
-			<a href="slider_delete.php?id=<?=$slide->id?>">Delete</a> 
-				<button type="submit">Delete</button>
-				<input type="hidden" name="id" value="<?=$slide->id?>" />
-			</form>
-			
-			| Activate/InActive | Copy</td>
-		</tr>
+									| <a href="slider_edit.php?id=<?=$slide->id?>">Edit</a> 
+									
+									| 
+									<form action="slider_delete.php" method="post">
+									<a href="slider_delete.php?id=<?=$slide->id?>">Delete</a> 
+										<button type="submit">Delete</button>
+										<input type="hidden" name="id" value="<?=$slide->id?>" />
+									</form>
+									
+									| Activate/InActive | Copy</td>
+								</tr>
 <?php
  endforeach
 ?>
